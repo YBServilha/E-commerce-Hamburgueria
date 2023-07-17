@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.rubik{
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 500;
+}
+
+#Logout{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 70px;
+}
+#Logout:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+
+.botaoform{
+    height: 40px;
+    width: 120px;
+    transition: all ease 0.2s;
+    border: none;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.botaoform:hover{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(230, 118, 13);
+    border: none;
+    color: white;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 55px;
+}
+#login:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+}
+#signin:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+#icon-carrinho{
+    font-size: 28px;
+}
+
+@media(max-width:991px){
+    #login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 65px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+}
+#logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+/* Carrossel  */
+
+.carrossel-main{
+    position: relative;
+}
+.carrossel-btn{
+    position: absolute;
+    left: 60%;
+}
+.carrossel-btn2{
+    position: absolute;
+    left: 1%;
+}
+.img-carrossel{
+    max-width: 79.5VW;
+    width: 100%;
+    height: 90vh;
+    object-fit: contain;
+    transform: translateX(12.2%);	
+}
+.carrossel-space{
+    width: auto;
+    position: absolute;
+    left: 12%;
+}
+.carrossel-space2{
+    width: auto;
+    position: absolute;
+    right: 15%;
+}
+
+@media(max-width: 1000px){
+    .img-carrossel{
+        max-width: 100%;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        transform: translateX(0%);
+    }
+}
+
+/* Categorias */
+.titulo-cardapio{
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+}
+section.categorias{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.categorias .principais{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+section.categorias .secundarias{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+
+}
+section.categorias .principais .monte{
+    width: 40%;
+    height: 95%;
+    position: relative;
+}
+section.categorias .principais .hamburgures{
+    width: 40%;
+    height: 95%;
+    position: relative;
+}
+
+section.categorias .secundarias .acompanhamentos{
+    width: 30%;
+    height: 95%;
+    position: relative;
+}
+section.categorias .secundarias .bebidas{
+    width: 30%;
+    height: 95%;
+    position: relative;
+}
+section.categorias .secundarias .sobremesas{
+    width: 30%;
+    height: 95%;
+    position: relative;
+}
+.categoria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.btn-categorias{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left:50%;
+    width: 230px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    transition: .3s;
+    font-size: 22px;
+}
+.btn-second-categorias{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 230px;
+    padding: 10px 0;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+.btn-categorias:hover, .btn-second-categorias:hover{
+    text-decoration: none;
+    background-color: rgb(230, 118, 13);
+    color: white;
+}
+@media(max-width:1000px){
+    section.categorias{
+        width: 100%;
+        height: 800px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+    section.categorias .principais{
+        width: 170%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+
+    }
+    section.categorias .secundarias{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    
+    }
+
+    section.categorias .principais .monte{
+        width: 95%;
+        height: 48%;
+        position: relative;
+    }
+    section.categorias .principais .hamburgures{
+        width: 95%;
+        height: 48%;
+        position: relative;
+    }
+
+
+    section.categorias .secundarias .acompanhamentos{
+        width: 95%;
+        height: 31%;
+        position: relative;
+    }
+    section.categorias .secundarias .bebidas{
+        width: 95%;
+        height: 31%;
+        position: relative;
+    }
+    section.categorias .secundarias .sobremesas{
+        width: 95%;
+        height: 31%;
+        position: relative;
+    }
+
+    .btn-categorias{
+        text-decoration: none;
+        color: black;
+        padding: 10px 0;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 80%;
+        left:50%;
+        width: 180px;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        transition: .3s;
+        font-size: 18px;
+    }
+    .btn-second-categorias{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        width: 180px;
+        padding: 10px 0;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .5s;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .btn-categorias:hover, .btn-second-categorias:hover{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+    }
+
+}
+    @media(max-width: 700px){
+        section.categorias{
+            width: 95vw;
+            height: 1400px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section.categorias .principais{
+            width: 95%;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-left: 0;
+        }
+        section.categorias .secundarias{
+            width: 95%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            margin-right: 0;
+        }
+
+        section.categorias .principais .monte{
+            width: 95%;
+            height: 90%;
+            position: relative;
+        }
+        section.categorias .principais .monte img{
+            max-height: 382px;
+            height: 100%;
+            object-fit: cover;
+        }
+        section.categorias .principais .hamburgures{
+            width: 95%;
+            height: 90%;
+            position: relative;
+        }
+        section.categorias .principais .hamburgures img{
+            max-height: 382px;
+            height: 100%;
+        }
+
+
+
+
+        section.categorias .secundarias .acompanhamentos{
+            max-width: 220px;
+            width: 100%;
+            height: 220px;
+            position: relative;
+        }
+        section.categorias .secundarias .bebidas{
+            max-width: 220px;
+            width: 100%;
+            height: 220px;
+            position: relative;
+        }
+        section.categorias .secundarias .sobremesas{
+            max-width: 220px;
+            width: 100%;
+            height: 220px;
+            position: relative;
+        }
+        section.categorias .secundarias .sobremesas img{
+            max-height: 220px;
+            height: 100%;
+        }
+
+    }
+
+    @media(max-width: 550px){
+        section.categorias{
+            width: 95vw;
+            height: 1700px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section.categorias .secundarias{
+            width: 95%;
+            height: 850px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+
+
+/* Quem somos? */
+.quem-somos{
+    width: 92vw;
+    height: 550px;
+    background-color: black;
+    display: flex;
+}
+.quem-somos .imagem{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quem-somos .imagem img{
+    width: 500px;
+}
+.quem-somos .texto{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.quem-somos .texto p{
+    color: white;
+    font-size: 20px;
+}
+
+@media(max-width: 830px){
+    .quem-somos{
+        width: 96vw;
+        height: 750px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quem-somos .imagem{
+        height: 50%;
+        width: 95%;
+        margin-left: 20px;
+    }
+    .quem-somos .texto{
+        height: 50%;
+        width: 95%;
+        margin-left: 20px;
+    }
+}
+
+
+/* Localização */
+.titulo-localizacao{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+.localizacao{
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.localizacao iframe{
+    width: 80%;
+    height: 100%;
+}
+
+@media(max-width: 500px){
+    .localizacao iframe{
+        width: 95%;
+        height: 100%;
+    }
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer .logo-rodape{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+footer .redes-sociais{
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .logo-rodape img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .redes-sociais ion-icon{
+    font-size: 32px;
+    color: white;
+    transition: .2s;
+}
+footer .redes-sociais ion-icon:hover{
+    font-size: 32px;
+    color: #777;
+}
+.first-icon-footer{
+    margin: 0 10px;
+}
+
+@media(max-width: 1000px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    footer .redes-sociais{
+        width: 80%;
+        height: 150px;
+    }
+    footer .redes-sociais{
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+    }
+}

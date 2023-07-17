@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.finalizar{
+    color: white;
+    background-color: rgb(206, 93, 1);
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.finalizar:hover{
+    color: rgb(206, 93, 1);
+    background-color: rgb(8, 8, 8);
+    border: 1px solid rgb(206, 93, 1);
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    background-color: white;
+}
+
+#Logout{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 70px;
+}
+#Logout:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+.rubik{
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 500;
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 55px;
+}
+#login:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+}
+#signin:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+#icon-carrinho{
+    font-size: 28px;
+}
+
+@media(max-width:991px){
+    #login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 65px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+}
+#logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+/* Monte o seu */
+
+.container-monte-seu{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-monte-seu h2{
+    font-size: 52px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.container-monte-seu .foto-hamburguer{
+    border: 2px solid yellow;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-monte-seu .foto-hamburguer img{
+    width: 50%;
+    height: 60%;
+    object-fit: cover;
+    border: none;
+}
+.container-monte-seu .form-hamburguer{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset{
+    border: 2px solid #D0D0D0;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px 80px;
+    margin-bottom: 25px;
+}
+legend{
+    text-align: center;
+    color: white;
+    padding: 0 5px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white;
+}
+
+label span{
+    display: inline-flex;
+    align-items: center;
+    border-radius: 31px;
+    transition: .25s ease;
+    width: 200px;
+    padding: 10px;
+}
+label span:hover, 
+input[type="radio"]:checked + span, input[type="checkbox"]:checked + span{
+    background-color: #d6d6e5;
+    color: black;
+}
+
+label span:before{
+    content: '';
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .25s ease;
+    box-shadow: inset 0 0 0 2px #e46e00;
+}
+
+input[type="radio"]:checked + span:before, input[type="checkbox"]:checked + span:before{
+    box-shadow: inset 0 0 0 10px #e46e00;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+
+@media(max-width: 400px){
+    fieldset{
+        border: 2px solid #D0D0D0;
+        max-width: 500px;
+        padding: 20px 40px;
+        margin-bottom: 25px;
+    }
+}  
+
+@media(max-width: 320px){
+    fieldset{
+        border: 2px solid #D0D0D0;
+        max-width: 500px;
+        padding: 20px 20px;
+        margin-bottom: 25px;
+    }
+    .container-monte-seu h2{
+        font-size: 38px;
+        margin-bottom: 50px;
+        color: white;
+    }
+}  
+
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer .logo-rodape{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+footer .redes-sociais{
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .logo-rodape img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .redes-sociais ion-icon{
+    font-size: 32px;
+    color: white;
+    transition: .2s;
+}
+footer .redes-sociais ion-icon:hover{
+    font-size: 32px;
+    color: #777;
+}
+.first-icon-footer{
+    margin: 0 10px;
+}
+
+@media(max-width: 1000px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    footer .redes-sociais{
+        width: 80%;
+        height: 150px;
+    }
+    footer .redes-sociais{
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+    }
+}

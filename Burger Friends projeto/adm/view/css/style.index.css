@@ -1,0 +1,55 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');/*Nunito*/
+
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(117, 84, 78);
+}
+
+.caixa-form-login{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+
+.caixa-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login{
+    font-family: 'Nunito';
+    padding: 20px;
+    font-size: 23px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 1px;
+}
+
+.caixa-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    font-size: 20px;
+    background-color: rgb(67, 228, 35);
+    transition: all ease 0.5s;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 20px;
+    color: white;
+}
+
+.button:hover{
+    padding: 5px 20px;
+    color: white;
+    background-color:rgb(40, 161, 231);
+}
+
+.input-campo{
+    height: 20px;
+    outline: none;
+}

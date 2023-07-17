@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');/*Nunito*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Nunito';
+}
+
+h3, h4{
+    text-align: center;
+}
+
+.caixa-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    border: 1px solid black;
+    width: 240px;
+    padding: 10px 10px 10px 25px;
+    margin-bottom: 20px;
+}
+
+input{
+    width:200px;
+    height: 23px;
+    outline: none;
+}
+
+select{
+    width: 207px;
+    height: 27px;
+    outline: none;
+}
+
+.caixa-input{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 20px 0px;
+}
+
+.atualizar{
+    height: 30px;
+    color: white;
+    background-color:rgb(40, 142, 238);
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    transition: all 0.5s ease;
+}
+
+.atualizar:hover{
+    height: 30px;
+    color: white;
+    background-color:rgb(54, 206, 40);
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.button-update{
+    display: flex;
+    justify-content: center;
+}

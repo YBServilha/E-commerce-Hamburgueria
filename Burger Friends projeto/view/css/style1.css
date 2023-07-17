@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:wght@300 & family= Montserrat:wght@100 & family= Noto+Sans & family= Poppins:wght@200 & display=trocar');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#Logout{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 70px;
+}
+#Logout:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: black;
+}
+.rubik{
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 500;
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 55px;
+}
+#login:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+}
+#signin:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+#icon-carrinho{
+    font-size: 28px;
+}
+
+@media(max-width:991px){
+    #login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 65px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+}
+#logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 99.1vw;
+    height: 100vh;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 4vw;
+    color: aliceblue;
+}
+
+.left-login-image {
+    width: 30vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2C2827;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px black;
+}
+
+.card-login > h1 {
+    color: white;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background:#2C2827;
+    color: gainsboro;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px black;
+    outline: none ;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.textfield >input::placeholder{
+    color: white;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    background: red;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+} 
+
+h3{
+    color: white;
+}
+ 
+@media only screen and (max-width: 960px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+/*@media only screen and (max-width: 60px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 50vh;
+    }
+    .card-login{
+        width: 90%;
+
+    }
+}*/
+
+@media(max-width: 1000px){
+    .main-login{
+        flex-direction: column;
+        height: 1000px;
+    }
+    .left-login > h1 {
+        font-size: 5vw;
+        
+        
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 90%;
+        height: auto;
+         
+    }
+
+    .left-login-image{
+        width: 50vh;
+        height: 70%;
+    }
+    .card-login{
+        width: 90%;
+        font-size: 5vw;
+
+    }
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer .logo-rodape{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+footer .redes-sociais{
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .logo-rodape img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .redes-sociais ion-icon{
+    font-size: 32px;
+    color: white;
+    transition: .2s;
+}
+footer .redes-sociais ion-icon:hover{
+    font-size: 32px;
+    color: #777;
+}
+.first-icon-footer{
+    margin: 0 10px;
+}
+
+@media(max-width: 1000px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    footer .redes-sociais{
+        width: 80%;
+        height: 150px;
+    }
+    footer .redes-sociais{
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,290 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+
+#Logout{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 70px;
+}
+#Logout:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+.rubik{
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 500;
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 55px;
+}
+#login:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+}
+#signin:hover{
+    background-color: rgb(105, 149, 231);
+    color: rgb(255, 255, 255);
+}
+#icon-carrinho{
+    font-size: 28px;
+}
+
+@media(max-width:991px){
+    #login{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#signin{
+    /*background-color: rgb(5, 52, 141);*/
+    background-color: rgb(235, 213, 16);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    width: 65px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+}
+#logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.cadastro{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cadastro .texto-imagem{
+    border: 2px;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cadastro .formulario{
+    border: 2px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro .texto-imagem img{
+    width: 80%;
+}
+.cadastro .texto-imagem p{
+    font-size: 48px;
+    color: white;
+}
+
+.cadastro .formulario .box-formulario{
+    width: 90%;
+    height: 90%;
+    background-color: #393433;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.cadastro .formulario .box-formulario form .input-dois{
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+}
+.cadastro .formulario .box-formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cadastro .formulario .box-formulario form input{
+    width: 50%;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #393433;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.cadastro .formulario .box-formulario form input::placeholder{
+    color: white;
+}
+
+.cadastro .formulario .box-formulario form .input-dois input:nth-child(1){
+    width: 50%;
+}
+.cadastro .formulario .box-formulario form .input-dois input:nth-child(2){
+    width: 35%;
+}
+.cadastro .formulario .box-formulario form .input-dois input:nth-child(3){
+    width: 12%;
+}
+
+h2{
+    color: white;
+    font-size: 32px;
+}
+
+#botao-enviar{
+    padding: 10px;
+    background-color: red;
+    transition: .5s;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+}
+
+#botao-enviar:hover{
+    background-color: yellowgreen;
+}
+
+
+@media(max-width: 1002px){
+    .cadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cadastro .texto-imagem{
+        border: 2px solid black;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .cadastro .formulario{
+        border: 2px solid black;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cadastro .texto-imagem img{
+        width: 55%;
+    }
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer .logo-rodape{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+footer .redes-sociais{
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .logo-rodape img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+footer .redes-sociais ion-icon{
+    font-size: 32px;
+    color: white;
+    transition: .2s;
+}
+footer .redes-sociais ion-icon:hover{
+    font-size: 32px;
+    color: #777;
+}
+.first-icon-footer{
+    margin: 0 10px;
+}
+
+@media(max-width: 1000px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    footer .redes-sociais{
+        width: 80%;
+        height: 150px;
+    }
+    footer .redes-sociais{
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+    }
+}

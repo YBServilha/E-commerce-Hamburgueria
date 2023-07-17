@@ -1,0 +1,78 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');/*Nunito*/
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Nunito';
+}
+
+header{
+    border-bottom: 2px solid rgb(206, 198, 198);
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(245, 238, 238);
+}
+
+.caixa-info{
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.caixa-button{
+    margin-left: 20px;
+}
+
+#logout{
+    font-size: 20px;
+    background-color: rgb(228, 35, 51);
+    transition: all ease 0.5s;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 20px;
+    color: white;
+}
+
+#logout:hover{
+    background-color:rgb(199, 15, 30);
+}
+
+.caixa-botoes{
+    height: 85.2vh;
+    width: 200px;
+    border-top: 1px solid rgb(206, 198, 198);
+    border-right: 2px solid rgb(206, 198, 198);
+    padding-top: 20px;
+}
+
+h2{
+    margin-left: 10px;
+    margin-top: 20px
+}
+
+.caixa-item-botoes{
+    width: 200px;
+
+}
+
+a{
+    margin-left: 10px;
+    color: black;
+}
+
+a:hover{
+    color: rgb(19, 173, 19);
+}
+
+.caixa-iframe{
+    display: flex;
+}
+
+iframe{
+    border:none;
+    max-width: 2000px;
+    width: 100%;
+}
+
